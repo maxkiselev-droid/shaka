@@ -1,0 +1,6 @@
+# Put one prompt per line.
+# Lines starting with # are ignored.
+
+Describe the current Shapka backend pipeline step-by-step.
+List likely failure points when serving static app.js from FastAPI.
+Propose 5 additional diagnostics to verify OpenAI_API_KEY loading in a venv.

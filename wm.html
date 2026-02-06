@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>World Model</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 20px; }
+    button { padding: 8px 12px; }
+    pre { background: #f6f6f6; padding: 12px; border-radius: 8px; white-space: pre-wrap; word-break: break-word; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border-bottom: 1px solid #ddd; padding: 8px; text-align: left; font-size: 14px; }
+    th { position: sticky; top: 0; background: white; }
+    .muted { color: #666; font-size: 13px; }
+    .top { display: flex; gap: 10px; align-items: center; }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <button id="refresh_btn">Refresh</button>
+    <label class="muted"><input type="checkbox" id="auto_chk"/> auto (2s)</label>
+    <div id="meta" class="muted"></div>
+    <a class="muted" href="/" style="margin-left:auto;">← back</a>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>src</th><th>rel</th><th>dst</th><th>w</th><th>n</th></tr>
+    </thead>
+    <tbody id="edges_body"></tbody>
+  </table>
+
+  <details style="margin-top:14px;">
+    <summary class="muted">Raw /wm JSON</summary>
+    <pre id="raw_json"></pre>
+  </details>
+
+  <script src="/wm.js"></script>
+</body>
+</html>
